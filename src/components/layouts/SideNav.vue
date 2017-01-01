@@ -5,7 +5,10 @@
                 <a href="#">Bootstrap 3</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-home"></i> Home ABC</a>
+                <a v-bind:href="baseUrl"><i class="fa fa-fw fa-home"></i> Home</a>
+            </li>
+            <li>
+                <a v-bind:href="anggota"><i class="fa fa-fw fa-arrow-right"></i> Anggota</a>
             </li>
             <li>
                 <a href="#"><i class="fa fa-fw fa-folder"></i> Page one</a>
@@ -41,11 +44,15 @@
 </template>
 
 <script>
+import * as env from '../../env.js'
+
+const anggota = env.BASE_URL + 'anggota';
 export default {
   name: 'side-nav',
   data () {
     return {
-      
+      baseUrl: env.BASE_URL, 
+      anggota: anggota
     }
   }
 }

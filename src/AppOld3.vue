@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import SideNav from './components/layouts/SideNav'
+import SideNav from './components/SideNav'
 
 export default {
     name: 'app',

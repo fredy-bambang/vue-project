@@ -36,6 +36,13 @@ import store from '../../store'
 import Counter from './CounterDisplay'
 import Increment from './IncrementButton'
 import OtherIncrement from './OtherIncrement'
+import * as env from '../../env.js'
+
+console.log('===lets load env===');
+console.log(env);
+console.log(env.KAMBING);
+console.log('===end load env===');
+
 export default {
   name: 'master-form',
   data () {
